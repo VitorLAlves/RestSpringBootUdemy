@@ -1,0 +1,8 @@
+/.metadata/
+/target/
+/.classpath
+/.springBeans
+/.project
+/.settings/
+/build/
+/.jar
