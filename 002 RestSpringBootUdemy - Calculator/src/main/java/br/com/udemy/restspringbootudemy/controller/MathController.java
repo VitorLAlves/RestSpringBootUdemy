@@ -20,7 +20,7 @@ public class MathController {
 	}
 	
 	@RequestMapping(value = "/calculator/sub/{numberOne}/{numberTwo}", method = RequestMethod.GET)
-	public Double subtracaoCalculator(@PathVariable(value = "numberOne") String numberOne, @PathVariable(value = "numberTwo") String numberTwo) throws Exception
+	public Double subtracaoCalculator(@PathVariable(value = "numberOne") String numberOne, @PathVariable(value = "numberTwo") String numberTwo)
 	{
 		return service.subtracao(numberOne, numberTwo);	
 	}

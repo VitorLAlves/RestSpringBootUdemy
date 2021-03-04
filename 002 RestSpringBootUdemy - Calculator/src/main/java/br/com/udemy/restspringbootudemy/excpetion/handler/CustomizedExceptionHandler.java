@@ -1,4 +1,5 @@
 package br.com.udemy.restspringbootudemy.excpetion.handler;
+
 import java.util.Date;
 
 import org.springframework.http.HttpStatus;
@@ -14,8 +15,8 @@ import br.com.udemy.restspringbootudemy.excpetion.MathException;
 import br.com.udemy.restspringbootudemy.excpetion.NegativeNumberException;
 import br.com.udemy.restspringbootudemy.excpetion.SubException;
 
-@ControllerAdvice
 @RestController
+@ControllerAdvice
 public class CustomizedExceptionHandler extends ResponseEntityExceptionHandler{
 	
 	@ExceptionHandler(Exception.class)
