@@ -2,20 +2,27 @@ package br.com.udemy.restspringbootudemy.data.vo;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+//import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+//@JsonPropertyOrder({"Id","Endereco","Nome","Sobrenome"})
 public class PersonVO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-
 	private Long Id;
 	
+	@JsonProperty("Nome")
 	private String firtsName;
 
+	@JsonProperty("Sobrenome")
 	private String lastName;
 	
+	@JsonProperty("Endereco")
 	private String adress;
 	
+	@JsonIgnore
 	private String gender;
 	
 	public PersonVO() {

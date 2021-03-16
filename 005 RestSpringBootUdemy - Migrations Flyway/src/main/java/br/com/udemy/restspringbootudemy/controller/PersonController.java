@@ -16,7 +16,7 @@ import br.com.udemy.restspringbootudemy.data.vo.PersonVO;
 import br.com.udemy.restspringbootudemy.service.PersonService;
 
 @RestController
-@RequestMapping(value = "/person")
+@RequestMapping(value = "/api/person/v1")
 public class PersonController {
 	
 	@Autowired
